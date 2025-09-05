@@ -1,0 +1,17 @@
+
+:root{
+  /* Change these to match your brand */
+  --primary:#0a66c2;
+  --on-primary:#ffffff;
+  --accent:#4ea0ff;
+
+  --bg:#ffffff;
+  --bg-alt:#fafafa;
+  --text:#111827;
+  --muted:#6b7280;
+  --border:#e5e7eb;
+  --card:#ffffff;
+
+  --header-grad-start: #f0f6ff;
+  --header-grad-end: #ffffff;
+}
