@@ -129,22 +129,33 @@
           <p class="muted">Replace with your real contact details before publishing.</p>
           <a class="btn primary" href="mailto:contact@innovationsadvisory.in">Email us</a>
         </div>
-        <form class="contact-form" onsubmit="return false;">
-          <label>
-            Name
-            <input type="text" placeholder="Your name" required>
-          </label>
-          <label>
-            Email
-            <input type="email" placeholder="you@example.com" required>
-          </label>
-          <label>
-            Message
-            <textarea rows="4" placeholder="Tell us what you need"></textarea>
-          </label>
-          <button class="btn w-100" type="submit" aria-disabled="true" title="Static demo only">Send (demo)</button>
-          <p class="muted small">This is a static demo form. Hook it to Formspree or Firebase later.</p>
-        </form>
+        <form id="contact-form" class="contact-form" action="https://formspree.io/f/yourFormId" method="POST" novalidate>
+  <!-- real fields -->
+  <label>
+    Name
+    <input name="name" type="text" placeholder="Your name" required minlength="2" maxlength="80">
+  </label>
+  <label>
+    Email
+    <input name="email" type="email" placeholder="you@example.com" required>
+  </label>
+  <label>
+    Message
+    <textarea name="message" rows="4" placeholder="Tell us what you need" required minlength="10" maxlength="2000"></textarea>
+  </label>
+
+  <!-- extras -->
+  <input type="hidden" name="_subject" value="New inquiry — Innovations Advisory">
+  <!-- honeypot (bots fill this; humans don't) -->
+  <label style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">
+    Do not fill this field
+    <input type="text" name="_gotcha" tabindex="-1" autocomplete="off">
+  </label>
+
+  <button id="contact-submit" class="btn w-100" type="submit">Send</button>
+  <p id="contact-status" class="muted small" aria-live="polite"></p>
+</form>
+
       </div>
     </section>
   </main>

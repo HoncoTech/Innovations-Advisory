@@ -55,3 +55,4 @@ blockquote cite{display:block;margin-top:8px;color:var(--muted);font-style:norma
   .nav-toggle{display:block}
   .contact{grid-template-columns:1fr}
 }
+#contact-status { margin-top: 8px; }
