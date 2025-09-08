@@ -1,17 +1,11 @@
 
-:root{
-  /* Change these to match your brand */
-  --primary:#0a66c2;
-  --on-primary:#ffffff;
-  --accent:#4ea0ff;
-
-  --bg:#ffffff;
-  --bg-alt:#fafafa;
-  --text:#111827;
-  --muted:#6b7280;
-  --border:#e5e7eb;
-  --card:#ffffff;
-
-  --header-grad-start: #f0f6ff;
-  --header-grad-end: #ffffff;
+:root {
+  --primary: #009846;   /* green */
+  --secondary: #FF4C29; /* orange */
+  --accent: #1FA9E6;    /* blue */
+  --dark: #002D3A;      /* navy */
+  --background: #ffffff;
+  --surface: #f9fafb;
+  --text: #111827;
+  --on-primary: #ffffff;
 }
